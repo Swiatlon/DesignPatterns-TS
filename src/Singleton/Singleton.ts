@@ -1,18 +1,20 @@
 // ---------------------------------------------- BEFORE SINGLETON  ------------------------------------------------------------------- //
-class LoggerBefore {
-  log(message: string) {
-    console.log(`[LOG]: ${message}`);
+{
+  class LoggerBefore {
+    log(message: string) {
+      console.log(`[LOG]: ${message}`);
+    }
   }
+
+  const loggerBefore1 = new LoggerBefore();
+  const loggerBefore2 = new LoggerBefore();
+
+  loggerBefore1.log("This is the first message");
+  loggerBefore2.log("This is the second message");
+
+  // Both loggerBefore1 and loggerBefore2 are different instances
+  console.log(loggerBefore1 === loggerBefore2); // Output: false
 }
-
-const loggerBefore1 = new LoggerBefore();
-const loggerBefore2 = new LoggerBefore();
-
-loggerBefore1.log("This is the first message");
-loggerBefore2.log("This is the second message");
-
-// Both loggerBefore1 and loggerBefore2 are different instances
-console.log(loggerBefore1 === loggerBefore2); // Output: false
 
 // ---------------------------------------------- AFTER SINGLETON  ------------------------------------------------------------------- //
 
