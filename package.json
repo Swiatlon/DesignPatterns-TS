@@ -8,6 +8,7 @@
     "singleton": "npx ts-node src/Singleton/singleton",
     "factory": "npx ts-node src/Factory/Factory",
     "adapter": "npx ts-node src/Adapter/Adapter",
+    "strategy": "npx ts-node src/Strategy/Strategy",
     "start": "npx ts-node src/index.ts"
   },
   "keywords": [],
