@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "singleton": "npx ts-node src/Singleton/singleton",
-    "factory": "npx ts-node src/Factory/factory",
+    "factory": "npx ts-node src/Factory/Factory",
     "start": "npx ts-node src/index.ts"
   },
   "keywords": [],
