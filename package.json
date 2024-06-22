@@ -10,6 +10,7 @@
     "adapter": "npx ts-node src/Adapter/Adapter",
     "strategy": "npx ts-node src/Strategy/Strategy",
     "builder": "npx ts-node src/Builder/Builder",
+    "bridge": "npx ts-node src/Bridge/Bridge",
     "start": "npx ts-node src/index.ts"
   },
   "keywords": [],
